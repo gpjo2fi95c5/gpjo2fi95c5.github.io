@@ -1,0 +1,1105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>挠脚心_趣味互动影像 | 欢乐解压短视频品牌官网</title>
+<meta name="description" content="挠脚心官方网站，专注趣味互动与解压影像的原创视频品牌，聚合创作者、专题企划与社区内容生态，为用户提供轻松欢乐的高品质短片体验。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff7a45'/%3E%3Cpath d='M20 40c6-10 18-10 24 0' stroke='%23fff' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='24' cy='24' r='4' fill='%23fff'/%3E%3Ccircle cx='40' cy='24' r='4' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --tkz-primary:#ff6b35;
+  --tkz-primary-deep:#e2521e;
+  --tkz-amber:#ffb703;
+  --tkz-cream:#fff8f0;
+  --tkz-ink:#241c16;
+  --tkz-ink-soft:#5d5047;
+  --tkz-line:#f0e2d4;
+  --tkz-card:#ffffff;
+  --tkz-shadow:0 10px 30px rgba(146,86,42,.12);
+  --tkz-radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--tkz-cream);
+  color:var(--tkz-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+.tkz-wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* 吸顶容器 */
+.tkz-sticky{position:sticky;top:0;z-index:60;box-shadow:0 4px 18px rgba(146,86,42,.08)}
+
+/* 公告条 */
+.tkz-notice{background:linear-gradient(90deg,#ff6b35,#ffb703);color:#fff;font-size:13.5px}
+.tkz-notice-inner{display:flex;align-items:center;gap:14px;padding:9px 24px;max-width:1200px;margin:0 auto;flex-wrap:wrap}
+.tkz-notice-tag{background:rgba(255,255,255,.24);padding:2px 10px;border-radius:999px;font-weight:700;letter-spacing:.5px;white-space:nowrap}
+.tkz-notice-list{display:flex;gap:22px;flex:1;overflow:hidden;white-space:nowrap;font-weight:500}
+.tkz-notice-list li{opacity:.96}
+.tkz-notice-time{font-size:12px;opacity:.9;white-space:nowrap}
+
+/* 页头 */
+.tkz-header{background:rgba(255,248,240,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--tkz-line)}
+.tkz-header-inner{display:flex;align-items:center;gap:28px;padding:14px 24px;max-width:1200px;margin:0 auto}
+.tkz-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px}
+.tkz-logo-mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--tkz-primary),var(--tkz-amber));display:grid;place-items:center;color:#fff;font-size:18px}
+.tkz-logo small{display:block;font-size:10.5px;font-weight:500;color:var(--tkz-ink-soft);letter-spacing:2px}
+.tkz-nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+.tkz-nav a{padding:7px 13px;border-radius:10px;font-size:14.5px;font-weight:600;color:var(--tkz-ink-soft);transition:.2s}
+.tkz-nav a:hover{background:#fff1e4;color:var(--tkz-primary-deep)}
+.tkz-search{display:flex;align-items:center;background:#fff;border:1px solid var(--tkz-line);border-radius:999px;padding:5px 6px 5px 16px;gap:8px;min-width:230px}
+.tkz-search input{border:none;outline:none;background:none;font-size:13.5px;width:100%;color:var(--tkz-ink)}
+.tkz-search input::placeholder{color:#b6a291}
+.tkz-search button{background:var(--tkz-primary);color:#fff;border-radius:999px;padding:7px 16px;font-size:13px;font-weight:700;transition:.2s}
+.tkz-search button:hover{background:var(--tkz-primary-deep)}
+.tkz-burger{display:none;font-size:22px;padding:6px 10px;border-radius:10px;background:#fff1e4;color:var(--tkz-primary-deep)}
+.tkz-search-feedback{max-width:1200px;margin:0 auto;padding:0 24px 10px;font-size:13px;color:var(--tkz-primary-deep);display:none}
+.tkz-search-feedback.is-show{display:block}
+
+/* 首屏 */
+.tkz-hero{padding:60px 0 40px;background:
+  radial-gradient(circle at 90% 10%, rgba(255,183,3,.22), transparent 46%),
+  radial-gradient(circle at 4% 90%, rgba(255,107,53,.14), transparent 42%);}
+.tkz-hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.tkz-badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #ffd9c2;color:var(--tkz-primary-deep);font-size:12.5px;font-weight:700;padding:5px 14px;border-radius:999px;margin-bottom:18px}
+.tkz-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--tkz-primary);box-shadow:0 0 0 3px rgba(255,107,53,.18)}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.15;letter-spacing:-.5px;font-weight:900;margin-bottom:16px}
+h1 .tkz-h1-accent{background:linear-gradient(120deg,var(--tkz-primary),var(--tkz-amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tkz-hero-slogan{font-size:18px;font-weight:700;color:var(--tkz-ink-soft);margin-bottom:16px}
+.tkz-hero-desc{font-size:15px;color:var(--tkz-ink-soft);margin-bottom:26px;max-width:520px}
+.tkz-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.tkz-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:12px;font-weight:700;font-size:14.5px;transition:.22s}
+.tkz-btn-primary{background:linear-gradient(135deg,var(--tkz-primary),var(--tkz-primary-deep));color:#fff;box-shadow:0 8px 20px rgba(255,107,53,.3)}
+.tkz-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(255,107,53,.38)}
+.tkz-btn-ghost{background:#fff;color:var(--tkz-primary-deep);border:1.5px solid #ffd9c2}
+.tkz-btn-ghost:hover{background:#fff1e4}
+.tkz-metrics{display:flex;gap:34px;flex-wrap:wrap}
+.tkz-metric b{display:block;font-size:26px;font-weight:900;color:var(--tkz-primary-deep);line-height:1.2}
+.tkz-metric span{font-size:12.5px;color:var(--tkz-ink-soft)}
+.tkz-hero-visual{position:relative}
+.tkz-hero-frame{border-radius:24px;overflow:hidden;box-shadow:var(--tkz-shadow);border:6px solid #fff}
+.tkz-hero-frame img{width:100%;aspect-ratio:16/12;object-fit:cover}
+.tkz-hero-chip{position:absolute;background:#fff;border-radius:14px;padding:10px 16px;box-shadow:0 10px 24px rgba(146,86,42,.16);font-size:13px;font-weight:700;display:flex;align-items:center;gap:8px}
+.tkz-hero-chip i{width:9px;height:9px;border-radius:50%;background:var(--tkz-primary);display:inline-block}
+.tkz-chip-1{bottom:22px;left:-16px}
+.tkz-chip-2{top:18px;right:-10px;background:var(--tkz-ink);color:#fff}
+.tkz-chip-2 i{background:var(--tkz-amber)}
+
+/* 通用区块 */
+.tkz-section{padding:56px 0}
+.tkz-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:30px;flex-wrap:wrap}
+.tkz-section-head .tkz-kicker{font-size:12.5px;font-weight:800;letter-spacing:3px;color:var(--tkz-primary);text-transform:uppercase;margin-bottom:6px}
+.tkz-section-head h2{font-size:clamp(24px,3vw,32px);font-weight:900;letter-spacing:-.4px}
+.tkz-section-head p{font-size:14px;color:var(--tkz-ink-soft);max-width:520px;margin-top:6px}
+.tkz-more{font-size:13.5px;font-weight:700;color:var(--tkz-primary-deep);white-space:nowrap}
+.tkz-more:hover{text-decoration:underline}
+
+/* 关键词解析长文 */
+.tkz-about{background:#fff;border-radius:26px;padding:42px clamp(22px,4vw,52px);box-shadow:var(--tkz-shadow);border:1px solid var(--tkz-line)}
+.tkz-about h2{font-size:clamp(24px,3vw,30px);font-weight:900;margin-bottom:8px}
+.tkz-about .tkz-about-lead{color:var(--tkz-primary-deep);font-weight:700;margin-bottom:22px;font-size:15px}
+.tkz-about p{font-size:14.8px;color:var(--tkz-ink-soft);margin-bottom:14px;text-align:justify}
+.tkz-about h3{font-size:16.5px;font-weight:800;margin:24px 0 8px;color:var(--tkz-ink);padding-left:12px;border-left:4px solid var(--tkz-primary);line-height:1.4}
+.tkz-about strong{color:var(--tkz-primary-deep)}
+
+/* 焦点视频 */
+.tkz-focus-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:22px}
+.tkz-focus-main{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--tkz-shadow)}
+.tkz-focus-main img{width:100%;aspect-ratio:16/10;object-fit:cover;transition:.4s}
+.tkz-focus-main:hover img{transform:scale(1.04)}
+.tkz-focus-caption{position:absolute;inset:auto 0 0 0;padding:26px 24px 20px;background:linear-gradient(transparent,rgba(36,28,22,.9));color:#fff}
+.tkz-focus-caption .tkz-tag-row{margin-bottom:8px}
+.tkz-focus-caption h3{font-size:21px;font-weight:900;color:#fff}
+.tkz-focus-caption p{font-size:13.5px;opacity:.86;margin-top:4px}
+.tkz-focus-side{display:grid;gap:16px}
+.tkz-focus-item{display:flex;gap:14px;background:#fff;border-radius:16px;padding:12px;border:1px solid var(--tkz-line);transition:.22s;align-items:center}
+.tkz-focus-item:hover{transform:translateX(4px);border-color:#ffd9c2;box-shadow:0 8px 20px rgba(146,86,42,.1)}
+.tkz-focus-item img{width:120px;aspect-ratio:16/10;object-fit:cover;border-radius:11px;flex-shrink:0}
+.tkz-focus-item h4{font-size:14.5px;font-weight:800;line-height:1.45}
+.tkz-focus-item span{font-size:12px;color:var(--tkz-ink-soft)}
+
+/* 视频卡片流 */
+.tkz-tag-row{display:flex;gap:8px;flex-wrap:wrap}
+.tkz-tag{font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:999px;background:#fff1e4;color:var(--tkz-primary-deep)}
+.tkz-tag.is-dark{background:var(--tkz-ink);color:#fff}
+.tkz-tag.is-amber{background:var(--tkz-amber);color:#5a3b00}
+.tkz-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tkz-video-card{background:var(--tkz-card);border-radius:var(--tkz-radius);overflow:hidden;border:1px solid var(--tkz-line);transition:.26s;display:flex;flex-direction:column}
+.tkz-video-card:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(146,86,42,.16)}
+.tkz-video-cover{position:relative;overflow:hidden}
+.tkz-video-cover img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:.4s}
+.tkz-video-card:hover .tkz-video-cover img{transform:scale(1.06)}
+.tkz-play{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transition:.25s;background:rgba(36,28,22,.24)}
+.tkz-video-card:hover .tkz-play{opacity:1}
+.tkz-play span{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;color:var(--tkz-primary-deep);font-size:17px;padding-left:3px}
+.tkz-cover-tag{position:absolute;top:10px;left:10px}
+.tkz-cover-dur{position:absolute;bottom:10px;right:10px;background:rgba(36,28,22,.72);color:#fff;font-size:11px;padding:2px 8px;border-radius:6px;font-weight:600}
+.tkz-video-body{padding:16px 16px 14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tkz-video-body h3{font-size:15.5px;font-weight:800;line-height:1.45}
+.tkz-video-body p{font-size:12.8px;color:var(--tkz-ink-soft);flex:1}
+.tkz-video-meta{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--tkz-ink-soft);border-top:1px dashed var(--tkz-line);padding-top:10px;margin-top:2px}
+.tkz-author-mini{display:flex;align-items:center;gap:7px;font-weight:600;color:var(--tkz-ink)}
+.tkz-mini-avatar{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:11px;font-weight:800;color:#fff}
+.tkz-actions{display:flex;gap:6px}
+.tkz-act{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;color:var(--tkz-ink-soft);padding:3px 8px;border-radius:8px;transition:.18s}
+.tkz-act:hover{background:#fff1e4;color:var(--tkz-primary-deep)}
+.tkz-act.is-liked{color:var(--tkz-primary-deep)}
+.tkz-act.is-saved{color:var(--tkz-amber)}
+
+/* 专题 */
+.tkz-topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tkz-topic{position:relative;border-radius:18px;overflow:hidden;min-height:230px;display:flex;align-items:flex-end;box-shadow:var(--tkz-shadow)}
+.tkz-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.4s}
+.tkz-topic:hover img{transform:scale(1.07)}
+.tkz-topic-body{position:relative;padding:18px;color:#fff;background:linear-gradient(transparent,rgba(36,28,22,.86));width:100%}
+.tkz-topic-body h3{font-size:16px;font-weight:900;margin:6px 0 4px}
+.tkz-topic-body p{font-size:12px;opacity:.85}
+.tkz-topic-state{font-size:11px;font-weight:700;background:rgba(255,255,255,.22);padding:2px 9px;border-radius:999px;display:inline-block}
+
+/* 创作者 */
+.tkz-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.tkz-creator{background:#fff;border-radius:var(--tkz-radius);padding:24px 20px;text-align:center;border:1px solid var(--tkz-line);transition:.24s}
+.tkz-creator:hover{transform:translateY(-5px);box-shadow:0 16px 32px rgba(146,86,42,.14);border-color:#ffd9c2}
+.tkz-avatar{width:70px;height:70px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;font-size:26px;font-weight:900;color:#fff;box-shadow:0 6px 16px rgba(146,86,42,.18)}
+.tkz-creator h3{font-size:16px;font-weight:800}
+.tkz-creator .tkz-field{font-size:12px;font-weight:700;color:var(--tkz-primary-deep);margin:3px 0 8px}
+.tkz-creator p{font-size:12.5px;color:var(--tkz-ink-soft);min-height:56px}
+.tkz-creator-stats{display:flex;justify-content:center;gap:16px;font-size:12px;color:var(--tkz-ink-soft);border-top:1px dashed var(--tkz-line);padding-top:10px;margin-top:10px}
+.tkz-creator-stats b{color:var(--tkz-ink);font-weight:800}
+
+/* 评论 */
+.tkz-comment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tkz-comment{background:#fff;border-radius:16px;padding:18px 20px;border:1px solid var(--tkz-line);position:relative}
+.tkz-comment::before{content:"“";position:absolute;top:6px;right:16px;font-size:44px;color:#ffe0cd;font-family:Georgia,serif;line-height:1}
+.tkz-comment p{font-size:13.5px;color:var(--tkz-ink-soft);margin-bottom:12px;position:relative;z-index:1}
+.tkz-comment-user{display:flex;align-items:center;gap:9px;font-size:12.5px;font-weight:700}
+.tkz-comment-user span{color:var(--tkz-ink-soft);font-weight:500;font-size:11.5px}
+
+/* 故事 */
+.tkz-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tkz-story{background:#fff;border-radius:18px;padding:24px;border-left:5px solid var(--tkz-primary);box-shadow:0 6px 18px rgba(146,86,42,.07)}
+.tkz-story:nth-child(2){border-left-color:var(--tkz-amber)}
+.tkz-story:nth-child(3){border-left-color:#3aa17e}
+.tkz-story h3{font-size:16.5px;font-weight:800;margin-bottom:8px}
+.tkz-story p{font-size:13.5px;color:var(--tkz-ink-soft)}
+.tkz-story time{display:block;font-size:11.5px;color:var(--tkz-primary-deep);font-weight:700;margin-top:12px}
+
+/* 作品墙 */
+.tkz-wall{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;grid-auto-rows:130px}
+.tkz-wall-item{position:relative;overflow:hidden;border-radius:14px}
+.tkz-wall-item img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.tkz-wall-item:hover img{transform:scale(1.08)}
+.tkz-wall-item span{position:absolute;inset:auto 0 0 0;padding:16px 12px 8px;background:linear-gradient(transparent,rgba(36,28,22,.8));color:#fff;font-size:11.5px;font-weight:700}
+.tkz-wall-big{grid-column:span 2;grid-row:span 2}
+.tkz-wall-wide{grid-column:span 2}
+
+/* FAQ */
+.tkz-faq{max-width:880px;margin:0 auto;display:grid;gap:12px}
+.tkz-faq details{background:#fff;border:1px solid var(--tkz-line);border-radius:14px;padding:0 20px;transition:.2s}
+.tkz-faq details[open]{border-color:#ffd9c2;box-shadow:0 8px 20px rgba(146,86,42,.08)}
+.tkz-faq summary{list-style:none;cursor:pointer;padding:16px 0;font-weight:700;font-size:14.5px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.tkz-faq summary::-webkit-details-marker{display:none}
+.tkz-faq summary::after{content:"+";font-size:20px;color:var(--tkz-primary);font-weight:400;transition:.2s}
+.tkz-faq details[open] summary::after{transform:rotate(45deg)}
+.tkz-faq p{font-size:13.5px;color:var(--tkz-ink-soft);padding-bottom:16px}
+
+/* 联系 / CTA */
+.tkz-cta{background:linear-gradient(135deg,#2b211a,#4a3527);border-radius:26px;padding:clamp(30px,5vw,54px);color:#fff;display:grid;grid-template-columns:1.5fr 1fr;gap:32px;align-items:center;position:relative;overflow:hidden}
+.tkz-cta::after{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(255,107,53,.35),transparent 68%);right:-70px;top:-90px}
+.tkz-cta h2{font-size:clamp(22px,3vw,30px);font-weight:900;margin-bottom:10px}
+.tkz-cta p{font-size:14px;color:#e6d8cc;max-width:480px}
+.tkz-cta-actions{display:flex;flex-direction:column;gap:12px;position:relative;z-index:1}
+.tkz-cta .tkz-btn-primary{justify-content:center}
+.tkz-cta .tkz-btn-ghost{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.3);color:#fff;justify-content:center}
+.tkz-cta .tkz-btn-ghost:hover{background:rgba(255,255,255,.18)}
+.tkz-contact-line{font-size:12.5px;color:#c9b6a6;text-align:center}
+
+/* 页脚 */
+.tkz-footer{background:#241c16;color:#c9b6a6;padding:48px 0 26px;margin-top:20px}
+.tkz-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;margin-bottom:34px}
+.tkz-footer h4{color:#fff;font-size:14px;font-weight:800;margin-bottom:12px}
+.tkz-footer p,.tkz-footer li{font-size:12.8px;line-height:2}
+.tkz-footer-logo{display:flex;align-items:center;gap:9px;color:#fff;font-weight:800;font-size:17px;margin-bottom:10px}
+.tkz-footer-logo .tkz-logo-mark{width:32px;height:32px;font-size:15px;border-radius:9px}
+.tkz-footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:#9a8a7c}
+.tkz-footer a:hover{color:var(--tkz-amber)}
+
+/* Toast & 弹窗 */
+.tkz-toast{position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(20px);background:var(--tkz-ink);color:#fff;padding:11px 22px;border-radius:999px;font-size:13.5px;font-weight:600;z-index:200;opacity:0;pointer-events:none;transition:.3s;box-shadow:0 10px 26px rgba(0,0,0,.28)}
+.tkz-toast.is-show{opacity:1;transform:translateX(-50%) translateY(0)}
+.tkz-modal{position:fixed;inset:0;background:rgba(36,28,22,.55);backdrop-filter:blur(3px);z-index:150;display:none;place-items:center;padding:20px}
+.tkz-modal.is-open{display:grid}
+.tkz-modal-box{background:#fff;border-radius:20px;max-width:520px;width:100%;padding:28px;position:relative;animation:tkzIn .28s ease}
+@keyframes tkzIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.tkz-modal-box h3{font-size:19px;font-weight:900;margin-bottom:8px}
+.tkz-modal-box p{font-size:13.5px;color:var(--tkz-ink-soft);margin-bottom:18px}
+.tkz-modal-close{position:absolute;top:14px;right:16px;font-size:20px;color:var(--tkz-ink-soft);line-height:1}
+.tkz-modal-actions{display:flex;gap:10px;flex-wrap:wrap}
+.tkz-modal-actions .tkz-btn{padding:10px 18px;font-size:13.5px}
+.tkz-share-tip{font-size:12.5px;color:var(--tkz-primary-deep);background:#fff1e4;border-radius:10px;padding:10px 14px;margin-top:12px;display:none}
+.tkz-share-tip.is-show{display:block}
+
+/* 回到顶部 */
+.tkz-top{position:fixed;right:22px;bottom:24px;width:46px;height:46px;border-radius:14px;background:var(--tkz-primary);color:#fff;font-size:18px;display:grid;place-items:center;z-index:90;box-shadow:0 10px 24px rgba(255,107,53,.4);opacity:0;pointer-events:none;transition:.3s}
+.tkz-top.is-show{opacity:1;pointer-events:auto}
+.tkz-top:hover{background:var(--tkz-primary-deep)}
+
+/* 移动端 */
+@media (max-width:960px){
+  .tkz-hero-grid,.tkz-focus-grid,.tkz-cta{grid-template-columns:1fr}
+  .tkz-video-grid,.tkz-comment-grid,.tkz-story-grid{grid-template-columns:repeat(2,1fr)}
+  .tkz-topic-grid,.tkz-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .tkz-footer-grid{grid-template-columns:1fr 1fr}
+  .tkz-wall{grid-template-columns:repeat(4,1fr)}
+  .tkz-search{display:none}
+  .tkz-burger{display:block;margin-left:auto}
+  .tkz-nav{display:none;flex-direction:column;width:100%;order:5;background:#fff;border-radius:14px;padding:8px;margin-top:6px;box-shadow:var(--tkz-shadow)}
+  .tkz-nav.is-open{display:flex}
+  .tkz-header-inner{flex-wrap:wrap}
+  .tkz-search.is-open{display:flex;width:100%;order:6;margin-top:8px}
+}
+@media (max-width:560px){
+  .tkz-video-grid,.tkz-comment-grid,.tkz-story-grid,.tkz-topic-grid,.tkz-creator-grid{grid-template-columns:1fr}
+  .tkz-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:110px}
+  .tkz-wall-big{grid-column:span 2}
+  .tkz-footer-grid{grid-template-columns:1fr}
+  .tkz-metrics{gap:22px}
+  .tkz-notice-list{display:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶：公告条 + 页头 -->
+<div class="tkz-sticky">
+  <div class="tkz-notice">
+    <div class="tkz-notice-inner">
+      <span class="tkz-notice-tag">官方发布</span>
+      <ul class="tkz-notice-list">
+        <li>新版「欢乐解压专题」首期上线，共收录 12 支原创短片</li>
+        <li>创作者激励计划开放报名，首月投稿达标可获流量推广</li>
+        <li>「脚丫与笑声」影像征集赛进入投票阶段</li>
+      </ul>
+      <span class="tkz-notice-time">2026-11-19 更新</span>
+    </div>
+  </div>
+  <header class="tkz-header">
+    <div class="tkz-header-inner">
+      <a class="tkz-logo" href="#tkz-home" aria-label="返回首页">
+        <span class="tkz-logo-mark">脚</span>
+        <span>挠脚心<small>欢乐影像</small></span>
+      </a>
+      <nav class="tkz-nav" id="tkzNav" aria-label="主导航">
+        <a href="#tkz-home">首页</a>
+        <a href="#tkz-about">品牌解析</a>
+        <a href="#tkz-focus">焦点内容</a>
+        <a href="#tkz-videos">热门视频</a>
+        <a href="#tkz-topics">专题企划</a>
+        <a href="#tkz-creators">创作者</a>
+        <a href="#tkz-comments">用户口碑</a>
+        <a href="#tkz-faq">帮助</a>
+      </nav>
+      <form class="tkz-search" id="tkzSearchForm" role="search">
+        <input type="search" id="tkzSearchInput" placeholder="搜索趣味解压短片…" aria-label="搜索站内内容">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="tkz-burger" id="tkzBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+    </div>
+    <div class="tkz-search-feedback" id="tkzSearchFeedback" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<main>
+  <!-- 品牌首屏 -->
+  <section class="tkz-hero" id="tkz-home">
+    <div class="tkz-wrap tkz-hero-grid">
+      <div class="tkz-hero-copy">
+        <span class="tkz-badge">官方网站 · 持续运营中</span>
+        <h1>挠脚心 <span class="tkz-h1-accent">让笑声有画面</span></h1>
+        <p class="tkz-hero-slogan">趣味互动影像的原创内容品牌 · 轻松、真实、有温度</p>
+        <p class="tkz-hero-desc">挠脚心是专注趣味互动与解压影像的原创视频品牌，我们相信笑声是最好的松弛剂。作为企业级内容平台，我们深耕垂直领域，为创作者搭建展示舞台，为观众提供品质稳定的暖心短片。</p>
+        <div class="tkz-hero-actions">
+          <a class="tkz-btn tkz-btn-primary" href="#tkz-videos">探索热门内容 →</a>
+          <a class="tkz-btn tkz-btn-ghost" href="#tkz-creators">认识创作者</a>
+          <button class="tkz-btn tkz-btn-ghost" data-tkz-open="submit">我要投稿</button>
+        </div>
+        <div class="tkz-metrics">
+          <div class="tkz-metric"><b>86 万+</b><span>注册用户</span></div>
+          <div class="tkz-metric"><b>2,140</b><span>原创短片</span></div>
+          <div class="tkz-metric"><b>4.8 分</b><span>用户口碑评分</span></div>
+        </div>
+      </div>
+      <div class="tkz-hero-visual">
+        <div class="tkz-hero-frame">
+          <img id="tkzHeroImg" alt="挠脚心品牌主视觉：暖橙色客厅里朋友围坐嬉笑的欢乐场景" loading="eager">
+        </div>
+        <div class="tkz-hero-chip tkz-chip-1"><i></i>本周新增 34 支原创短片</div>
+        <div class="tkz-hero-chip tkz-chip-2"><i></i>官方精选 · 高清画质</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌解析长文 -->
+  <section class="tkz-section" id="tkz-about">
+    <div class="tkz-wrap">
+      <div class="tkz-about">
+        <h2>关于「挠脚心」的内容定位与品牌解析</h2>
+        <p class="tkz-about-lead">一个把笑声做成内容的视频品牌，也是一群认真生活的人共同维护的内容生态。</p>
+
+        <h3>一、我们为什么做「挠脚心」</h3>
+        <p>「挠脚心」这个名字本身就带着画面感：它让人想到毫无防备的、忍不住的笑。作为一家真实运营的视频品牌，我们把这种感受提炼为内容标准——一支短片能不能在三十秒内让人松开眉头，是我们判断内容品质的第一道标尺。官方网站自建立起，我们便坚持原创、正版、高清三条底线：所有上架短片均经过授权核验，画面分辨率统一达到高清规格，字幕与音频逐条校对。我们不追逐猎奇，也不制造对立，而是希望用真实、温暖、有力量的影像，陪伴用户度过一天里那些需要放松的缝隙。</p>
+        <p>在行业里，很多人把趣味短视频理解为一次性的消遣，但我们更愿意把它看作一种长期的内容生态。平台持续运营的三年里，我们逐步搭建起选题库、拍摄规范、剪辑模板与创作者培训体系。每一支被官方推荐的短片，背后都有至少两轮内容审核与一次画质复检。这种略带笨拙的坚持，让「挠脚心」在用户中形成了值得信赖的口碑，也让我们在垂直领域内积累了相对扎实的专业沉淀。</p>
+
+        <h3>二、内容方向：从趣味互动到生活解压</h3>
+        <p>说到挠脚心，最直接的内容形态当然是互动游戏类短片：朋友之间的恶作剧、家庭聚会里的小挑战、情侣之间的轻松打闹。这类内容节奏明快、笑点密集，是我们社区里最受欢迎的品类之一。但如果我们只做这一点，品牌就很容易被消耗。因此，平台在互动趣味之外，还拓展了日常记录、经验分享、创作幕后与治愈影像四条主线。比如「脚丫与笑声」系列会记录一次完整的拍摄过程，从选题会上的争论，到现场反复试验道具，再到成片后创作者的复盘。观众看到的不只是成片，还有一群人认真做内容的样子。</p>
+        <p>在生活方式的维度上，我们推出了「解压小实验」企划：用影像记录普通人如何给自己找乐子——有人在家布置了一个迷你游乐园，有人组织社区邻里玩起童年游戏，有人用一块地毯和几个抱枕还原儿时的午后。这些内容没有夸张的剪辑，也没有刻意的戏剧冲突，但它们真实、具体，带着生活本身的温度。这正是我们理解的企业社会责任：在注意力稀缺的时代，提供不需要过度消耗情绪的内容。</p>
+
+        <h3>三、创作者生态：让认真的人被看见</h3>
+        <p>一个视频品牌能否长期成立，取决于它是否拥有一批愿意持续投入的创作者。作为平台，我们把创作者放在内容生态的核心位置：新人进入后有明确的投稿指南与拍摄规范，成长阶段有流量扶持与选题建议，成熟阶段可以参与专题企划与品牌合作。我们不承诺一夜爆红，但承诺规则透明——播放、点赞、收藏、评论的数据统计口径统一公开，榜单每周更新，官方发布的内容推荐逻辑也会在帮助中心说明。这种透明性，是我们与创作者之间最重要的信任基础。</p>
+        <p>目前平台已聚集超过两千位活跃创作者，覆盖家庭趣味、校园生活、手工道具、音乐现场、萌宠日常等多个方向。他们的作品风格各异，有人擅长用固定机位拍出安静的幽默，有人喜欢手写字幕与老式滤镜，有人专注做低成本道具的教程。多元与包容，是我们反复强调的关键词：只要内容真实、表达友善，就值得被认真对待。</p>
+
+        <h3>四、技术体验：为新观看习惯设计的产品</h3>
+        <p>在观看体验上，官方网站完成了多轮改版：首页支持内容筛选与关键词检索，视频卡片标注明时长与画质，移动端优化了单手操作与横竖屏切换。我们还在持续打磨「收藏夹」与「稍后看」功能，让用户可以把一支短片留到合适的时间慢慢看。这些细节并不显眼，但它们是品质感的一部分。我们相信，用户至上的理念不是一句口号，而是体现在每一次点击是否顺畅、每一个按钮是否好按。</p>
+
+        <h3>五、面向未来：把笑声做成长久的事</h3>
+        <p>2026 年，我们会把重心放在两件事上：一是继续完善原创内容的生产流程，让每一支官方发布的短片都有稳定的品质下限；二是扩大社区共创的参与面，推出更多像影像征集、创意挑战、年度投票这样的活动，让观众从旁观者变成参与者。挠脚心不打算做最大的平台，但希望成为用户心里那个「想放松时会想起来」的地方。这需要时间，也需要每一位创作者与用户的陪伴。我们愿意慢慢来。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="tkz-section" id="tkz-focus" style="background:#fff;border-top:1px solid var(--tkz-line);border-bottom:1px solid var(--tkz-line)">
+    <div class="tkz-wrap">
+      <div class="tkz-section-head">
+        <div>
+          <div class="tkz-kicker">Featured</div>
+          <h2>本期焦点内容</h2>
+          <p>编辑部与社区共同选出的重点推荐，涵盖互动趣味、创作幕后与生活记录。</p>
+        </div>
+        <a class="tkz-more" href="#tkz-videos">查看全部内容 →</a>
+      </div>
+      <div class="tkz-focus-grid">
+        <article class="tkz-focus-main">
+          <img data-tkz-art="focusMain" alt="焦点短片封面：客厅地垫上朋友互相挠脚心的欢乐瞬间">
+          <div class="tkz-focus-caption">
+            <div class="tkz-tag-row"><span class="tkz-tag">官方精选</span><span class="tkz-tag is-amber">欢乐解压</span></div>
+            <h3>地垫上的十分钟：一场没有输家的挠脚心挑战</h3>
+            <p>四个人、一块地毯、一条规则，笑声从第一分钟持续到最后一秒。</p>
+          </div>
+        </article>
+        <div class="tkz-focus-side">
+          <article class="tkz-focus-item">
+            <img data-tkz-art="focus1" alt="短片封面：阳光房间里孩子笑着缩起脚丫的瞬间">
+            <div>
+              <div class="tkz-tag-row"><span class="tkz-tag">家庭趣味</span></div>
+              <h4>把家里变成游乐场：亲子互动小游戏实录</h4>
+              <span>创作者 林小满 · 12.4 万次播放</span>
+            </div>
+          </article>
+          <article class="tkz-focus-item">
+            <img data-tkz-art="focus2" alt="短片封面：手作道具工作台上摆放的毛绒玩具与色卡">
+            <div>
+              <div class="tkz-tag-row"><span class="tkz-tag is-dark">创作幕后</span></div>
+              <h4>一支解压短片是怎么拍出来的：道具篇</h4>
+              <span>创作者 阿柚工作室 · 8.7 万次播放</span>
+            </div>
+          </article>
+          <article class="tkz-focus-item">
+            <img data-tkz-art="focus3" alt="短片封面：黄昏社区广场上邻里围坐玩游戏的场景">
+            <div>
+              <div class="tkz-tag-row"><span class="tkz-tag">社区共创</span></div>
+              <h4>楼下的笑声：我们和邻居玩了一场童年游戏</h4>
+              <span>创作者 老陈的镜头 · 6.9 万次播放</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="tkz-section" id="tkz-videos">
+    <div class="tkz-wrap">
+      <div class="tkz-section-head">
+        <div>
+          <div class="tkz-kicker">Trending</div>
+          <h2>热门视频流</h2>
+          <p>来自社区的真实作品，标签可帮助我们更快找到你想看的方向。</p>
+        </div>
+        <a class="tkz-more" href="#tkz-topics">浏览专题企划 →</a>
+      </div>
+      <div class="tkz-video-grid" id="tkzVideoGrid">
+        <article class="tkz-video-card">
+          <div class="tkz-video-cover">
+            <img data-tkz-art="v1" alt="视频封面：朋友聚会客厅里笑着躲闪的脚丫特写">
+            <span class="tkz-play"><span>▶</span></span>
+            <span class="tkz-cover-tag tkz-tag">互动趣味</span>
+            <span class="tkz-cover-dur">04:12</span>
+          </div>
+          <div class="tkz-video-body">
+            <h3>谁先笑出声：客厅挠脚心友谊赛第三期</h3>
+            <p>规则升级成双人组队，笑点密度比前两期更高。</p>
+            <div class="tkz-video-meta">
+              <span class="tkz-author-mini"><i class="tkz-mini-avatar" style="background:#ff7a45">林</i>林小满</span>
+              <div class="tkz-actions">
+                <button class="tkz-act" data-tkz-like aria-pressed="false"><span>♥</span><b>1.2万</b></button>
+                <button class="tkz-act" data-tkz-save aria-pressed="false"><span>☆</span><b>收藏</b></button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="tkz-video-card">
+          <div class="tkz-video-cover">
+            <img data-tkz-art="v2" alt="视频封面：木质地板上毛绒拖鞋与手绘规则卡的摆拍">
+            <span class="tkz-play"><span>▶</span></span>
+            <span class="tkz-cover-tag tkz-tag is-amber">实用技巧</span>
+            <span class="tkz-cover-dur">06:38</span>
+          </div>
+          <div class="tkz-video-body">
+            <h3>三分钟布置一个解压角落：预算不到一百块</h3>
+            <p>从地毯到靠垫，用最小成本做出愿意待一下午的空间。</p>
+            <div class="tkz-video-meta">
+              <span class="tkz-author-mini"><i class="tkz-mini-avatar" style="background:#3aa17e">柚</i>阿柚工作室</span>
+              <div class="tkz-actions">
+                <button class="tkz-act" data-tkz-like aria-pressed="false"><span>♥</span><b>9,842</b></button>
+                <button class="tkz-act" data-tkz-save aria-pressed="false"><span>☆</span><b>收藏</b></button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="tkz-video-card">
+          <div class="tkz-video-cover">
+            <img data-tkz-art="v3" alt="视频封面：黄昏校园操场上学生围圈游戏的剪影">
+            <span class="tkz-play"><span>▶</span></span>
+            <span class="tkz-cover-tag tkz-tag is-dark">校园生活</span>
+            <span class="tkz-cover-dur">05:20</span>
+          </div>
+          <div class="tkz-video-body">
+            <h3>毕业前的最后一次胡闹：操场上的笑声合集</h3>
+            <p>六个即将各奔东西的人，认真玩了一场输赢不重要的游戏。</p>
+            <div class="tkz-video-meta">
+              <span class="tkz-author-mini"><i class="tkz-mini-avatar" style="background:#6c7cff">陈</i>陈屿</span>
+              <div class="tkz-actions">
+                <button class="tkz-act" data-tkz-like aria-pressed="false"><span>♥</span><b>2.6万</b></button>
+                <button class="tkz-act" data-tkz-save aria-pressed="false"><span>☆</span><b>收藏</b></button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="tkz-video-card">
+          <div class="tkz-video-cover">
+            <img data-tkz-art="v4" alt="视频封面：手作工作台上整齐排列的布料与针线">
+            <span class="tkz-play"><span>▶</span></span>
+            <span class="tkz-cover-tag tkz-tag">手作 DIY</span>
+            <span class="tkz-cover-dur">09:15</span>
+          </div>
+          <div class="tkz-video-body">
+            <h3>用旧毛衣做一双软拖鞋：从裁剪到缝制全流程</h3>
+            <p>不起球、不磨脚，顺手把旧衣重新用起来的满足感。</p>
+            <div class="tkz-video-meta">
+              <span class="tkz-author-mini"><i class="tkz-mini-avatar" style="background:#c76bd6">禾</i>禾禾手作</span>
+              <div class="tkz-actions">
+                <button class="tkz-act" data-tkz-like aria-pressed="false"><span>♥</span><b>7,310</b></button>
+                <button class="tkz-act" data-tkz-save aria-pressed="false"><span>☆</span><b>收藏</b></button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="tkz-video-card">
+          <div class="tkz-video-cover">
+            <img data-tkz-art="v5" alt="视频封面：猫咪在阳光地板伸懒腰并轻碰主人脚背">
+            <span class="tkz-play"><span>▶</span></span>
+            <span class="tkz-cover-tag tkz-tag is-amber">萌宠日常</span>
+            <span class="tkz-cover-dur">03:02</span>
+          </div>
+          <div class="tkz-video-body">
+            <h3>猫主子与我的一百种互动：这次的对手是脚趾</h3>
+            <p>它总能在最不合时宜的时刻，准确地找到我的脚。</p>
+            <div class="tkz-video-meta">
+              <span class="tkz-author-mini"><i class="tkz-mini-avatar" style="background:#ffa03a">鹿</i>鹿鹿酱</span>
+              <div class="tkz-actions">
+                <button class="tkz-act" data-tkz-like aria-pressed="false"><span>♥</span><b>4.8万</b></button>
+                <button class="tkz-act" data-tkz-save aria-pressed="false"><span>☆</span><b>收藏</b></button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="tkz-video-card">
+          <div class="tkz-video-cover">
+            <img data-tkz-art="v6" alt="视频封面：夜间卧室里暖黄小灯与摊开的笔记本">
+            <span class="tkz-play"><span>▶</span></span>
+            <span class="tkz-cover-tag tkz-tag is-dark">情感故事</span>
+            <span class="tkz-cover-dur">08:44</span>
+          </div>
+          <div class="tkz-video-body">
+            <h3>那些让我笑出声的小事：一份普通人的深夜清单</h3>
+            <p>不宏大的快乐，往往撑住了难熬的一天。</p>
+            <div class="tkz-video-meta">
+              <span class="tkz-author-mini"><i class="tkz-mini-avatar" style="background:#3aa17e">周</i>周周不晚</span>
+              <div class="tkz-actions">
+                <button class="tkz-act" data-tkz-like aria-pressed="false"><span>♥</span><b>1.5万</b></button>
+                <button class="tkz-act" data-tkz-save aria-pressed="false"><span>☆</span><b>收藏</b></button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="tkz-section" id="tkz-topics" style="background:#fff;border-top:1px solid var(--tkz-line);border-bottom:1px solid var(--tkz-line)">
+    <div class="tkz-wrap">
+      <div class="tkz-section-head">
+        <div>
+          <div class="tkz-kicker">Series</div>
+          <h2>专题企划与影像征集</h2>
+          <p>围绕具体主题组织的系列内容，欢迎创作者报名参与共创。</p>
+        </div>
+        <button class="tkz-more" data-tkz-open="submit">报名参与 →</button>
+      </div>
+      <div class="tkz-topic-grid">
+        <article class="tkz-topic">
+          <img data-tkz-art="t1" alt="专题封面：铺满软垫的客厅地面与彩色气球">
+          <div class="tkz-topic-body">
+            <span class="tkz-topic-state">更新至 12 期</span>
+            <h3>解压小实验</h3>
+            <p>用影像记录普通人给自己找乐子的方式。</p>
+          </div>
+        </article>
+        <article class="tkz-topic">
+          <img data-tkz-art="t2" alt="专题封面：朋友围坐在帐篷灯串下的温暖夜晚">
+          <div class="tkz-topic-body">
+            <span class="tkz-topic-state">征集中</span>
+            <h3>笑声收集计划</h3>
+            <p>投稿一段让你笑出声的日常，参与年度合辑。</p>
+          </div>
+        </article>
+        <article class="tkz-topic">
+          <img data-tkz-art="t3" alt="专题封面：拍摄现场监视器与散落的分镜手稿">
+          <div class="tkz-topic-body">
+            <span class="tkz-topic-state">更新至 8 期</span>
+            <h3>一支短片的诞生</h3>
+            <p>从选题到成片，完整公开创作幕后。</p>
+          </div>
+        </article>
+        <article class="tkz-topic">
+          <img data-tkz-art="t4" alt="专题封面：社区广场上围坐玩游戏的邻里们">
+          <div class="tkz-topic-body">
+            <span class="tkz-topic-state">投票进行中</span>
+            <h3>楼下的游戏</h3>
+            <p>把童年游戏带回社区，请为喜欢的作品投票。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="tkz-section" id="tkz-creators">
+    <div class="tkz-wrap">
+      <div class="tkz-section-head">
+        <div>
+          <div class="tkz-kicker">Creators</div>
+          <h2>创作者的日常</h2>
+          <p>他们不是明星，只是愿意把生活里的笑声认真记录下来的人。</p>
+        </div>
+        <a class="tkz-more" href="#tkz-comments">看看大家怎么说 →</a>
+      </div>
+      <div class="tkz-creator-grid" id="tkzCreatorGrid">
+        <article class="tkz-creator">
+          <div class="tkz-avatar" style="background:linear-gradient(135deg,#ff7a45,#ffb703)">林</div>
+          <h3>林小满</h3>
+          <div class="tkz-field">家庭趣味 · 互动游戏</div>
+          <p>两个孩子的妈妈，擅长把客厅变成游乐场，拍片原则是先玩得尽兴再按下录制键。</p>
+          <div class="tkz-creator-stats"><span><b>186</b> 作品</span><span><b>42.6万</b> 粉丝</span></div>
+        </article>
+        <article class="tkz-creator">
+          <div class="tkz-avatar" style="background:linear-gradient(135deg,#3aa17e,#8ed4b3)">柚</div>
+          <h3>阿柚工作室</h3>
+          <div class="tkz-field">手作道具 · 创作幕后</div>
+          <p>三人小团队，坚持用低成本材料做质感道具，教程细致到每一步都标注尺寸。</p>
+          <div class="tkz-creator-stats"><span><b>94</b> 作品</span><span><b>28.1万</b> 粉丝</span></div>
+        </article>
+        <article class="tkz-creator">
+          <div class="tkz-avatar" style="background:linear-gradient(135deg,#6c7cff,#a6b0ff)">陈</div>
+          <h3>陈屿</h3>
+          <div class="tkz-field">校园生活 · 青春记录</div>
+          <p>在读研究生，镜头里多是操场、宿舍和即将告别的朋友，剪辑克制，情绪饱满。</p>
+          <div class="tkz-creator-stats"><span><b>63</b> 作品</span><span><b>31.4万</b> 粉丝</span></div>
+        </article>
+        <article class="tkz-creator">
+          <div class="tkz-avatar" style="background:linear-gradient(135deg,#c76bd6,#f0a9f7)">禾</div>
+          <h3>禾禾手作</h3>
+          <div class="tkz-field">旧物改造 · 生活方式</div>
+          <p>把旧衣物重新做成日常用品，相信减少浪费本身就是一种温柔的创作。</p>
+          <div class="tkz-creator-stats"><span><b>127</b> 作品</span><span><b>19.8万</b> 粉丝</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 故事随笔 -->
+  <section class="tkz-section" id="tkz-stories" style="background:linear-gradient(180deg,#fff,#fff6ee);border-top:1px solid var(--tkz-line)">
+    <div class="tkz-wrap">
+      <div class="tkz-section-head">
+        <div>
+          <div class="tkz-kicker">Journal</div>
+          <h2>影像之外的故事</h2>
+          <p>一些拍摄手记与随笔，记录镜头背后的真实心情。</p>
+        </div>
+      </div>
+      <div class="tkz-story-grid">
+        <article class="tkz-story">
+          <h3>为了三十秒的笑声，我们重拍了九次</h3>
+          <p>那支短片最后只有三十秒，但我们在客厅里折腾了整整一个下午。最难的不是挠到对方的脚心，而是让所有人真的放松下来——镜头一举起来，人就容易变得不像自己。</p>
+          <time>2026-11-14 · 拍摄手记</time>
+        </article>
+        <article class="tkz-story">
+          <h3>我拍邻居们玩游戏，拍着拍着他们也成了朋友</h3>
+          <p>最初的动机很简单：社区广场晚上太安静了。我把想法写成一张纸贴到楼道里，来了七个人。拍到第三期，已经有人主动带水果下楼，说要边吃边玩。</p>
+          <time>2026-11-08 · 社区观察</time>
+        </article>
+        <article class="tkz-story">
+          <h3>旧毛衣变成拖鞋之后，我开始舍不得扔东西</h3>
+          <p>以前总觉得旧物就是负担。做完那双拖鞋才意识到，舍不得扔掉的不是东西本身，而是那段时间。影像能留下记忆，手作也能。</p>
+          <time>2026-10-30 · 生活随笔</time>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品墙 -->
+  <section class="tkz-section" id="tkz-wall">
+    <div class="tkz-wrap">
+      <div class="tkz-section-head">
+        <div>
+          <div class="tkz-kicker">Gallery</div>
+          <h2>社区影像墙</h2>
+          <p>精选用户作品封面，尺寸虽不同，认真程度一致。</p>
+        </div>
+        <a class="tkz-more" href="#tkz-videos">进入视频流 →</a>
+      </div>
+      <div class="tkz-wall">
+        <a class="tkz-wall-item tkz-wall-big" href="#tkz-videos"><img data-tkz-art="w1" alt="影像墙作品：客厅地垫上与孩子玩脚丫游戏的画面"><span>客厅里的游戏日</span></a>
+        <a class="tkz-wall-item" href="#tkz-videos"><img data-tkz-art="w2" alt="影像墙作品：手绘规则卡与彩色便签的桌面"><span>游戏规则卡</span></a>
+        <a class="tkz-wall-item tkz-wall-wide" href="#tkz-videos"><img data-tkz-art="w3" alt="影像墙作品：黄昏操场上围成圈的同学们"><span>毕业前的操场</span></a>
+        <a class="tkz-wall-item" href="#tkz-videos"><img data-tkz-art="w4" alt="影像墙作品：旧毛衣拆线后整齐码放的毛线团"><span>旧毛衣的新生</span></a>
+        <a class="tkz-wall-item" href="#tkz-videos"><img data-tkz-art="w5" alt="影像墙作品：猫咪轻碰主人脚背的温暖瞬间"><span>猫的突然袭击</span></a>
+        <a class="tkz-wall-item tkz-wall-wide" href="#tkz-videos"><img data-tkz-art="w6" alt="影像墙作品：拍摄现场的监视器与场记板"><span>幕后第一天</span></a>
+        <a class="tkz-wall-item" href="#tkz-videos"><img data-tkz-art="w7" alt="影像墙作品：帐篷灯串下朋友围坐的夜谈"><span>周六夜晚</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="tkz-section" id="tkz-comments" style="background:#fff;border-top:1px solid var(--tkz-line);border-bottom:1px solid var(--tkz-line)">
+    <div class="tkz-wrap">
+      <div class="tkz-section-head">
+        <div>
+          <div class="tkz-kicker">Voices</div>
+          <h2>用户与创作者怎么说</h2>
+          <p>口口碑来自长期的内容积累，也来自每一次认真回应。</p>
+        </div>
+      </div>
+      <div class="tkz-comment-grid">
+        <div class="tkz-comment">
+          <p>下班回家不想看太费脑的东西，挠脚心的短片刚好。画质干净，剪辑不吵，看完会真的松一口气。</p>
+          <div class="tkz-comment-user"><i class="tkz-mini-avatar" style="background:#ff7a45">赵</i>赵一川 <span>· 用户 · 2 天前</span></div>
+        </div>
+        <div class="tkz-comment">
+          <p>作为创作者，我挺感激这里的投稿指南，写得非常具体，连字幕字号都给了建议。对新人很友好。</p>
+          <div class="tkz-comment-user"><i class="tkz-mini-avatar" style="background:#3aa17e">许</i>许青禾 <span>· 创作者 · 4 天前</span></div>
+        </div>
+        <div class="tkz-comment">
+          <p>专题企划做得用心，「解压小实验」追了整整一季，每一期都能看到不一样的生活样本。</p>
+          <div class="tkz-comment-user"><i class="tkz-mini-avatar" style="background:#6c7cff">唐</i>唐小满 <span>· 用户 · 5 天前</span></div>
+        </div>
+        <div class="tkz-comment">
+          <p>孩子最喜欢林小满的片子，我们一家人会边看边模仿里面的游戏，这大概是我最满意的亲子时间。</p>
+          <div class="tkz-comment-user"><i class="tkz-mini-avatar" style="background:#ffa03a">吴</i>吴鸣 <span>· 用户 · 1 周前</span></div>
+        </div>
+        <div class="tkz-comment">
+          <p>收藏夹功能希望再优化一下分类，其他都挺好。客服反馈速度也快，当天就回了。</p>
+          <div class="tkz-comment-user"><i class="tkz-mini-avatar" style="background:#c76bd6">何</i>何夕 <span>· 用户 · 1 周前</span></div>
+        </div>
+        <div class="tkz-comment">
+          <p>平台数据统计挺透明的，播放量、完播率都能看到，让我知道下一条该往哪个方向调整。</p>
+          <div class="tkz-comment-user"><i class="tkz-mini-avatar" style="background:#e2521e">周</i>周周不晚 <span>· 创作者 · 9 天前</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="tkz-section" id="tkz-faq">
+    <div class="tkz-wrap">
+      <div class="tkz-section-head">
+        <div>
+          <div class="tkz-kicker">Help</div>
+          <h2>常见问题</h2>
+          <p>关于内容、投稿与账号的说明，仍有疑问可随时联系我们。</p>
+        </div>
+      </div>
+      <div class="tkz-faq">
+        <details open>
+          <summary>「挠脚心」是一个什么样的视频品牌？</summary>
+          <p>挠脚心是专注趣味互动与解压影像的原创内容品牌，官方网站提供内容浏览、创作者展示、专题企划与社区互动等功能，所有上架短片均经过授权核验与画质检查。</p>
+        </details>
+        <details>
+          <summary>我想投稿自己的短片，需要满足哪些条件？</summary>
+          <p>作品需为本人原创或已获得完整授权，画面清晰、音轨同步，不含攻击性表达与未经同意拍摄的他人影像。上传前请阅读投稿指南，报名入口在页面底部的联系模块中。</p>
+        </details>
+        <details>
+          <summary>平台上的内容画质如何保证？</summary>
+          <p>官方发布与推荐的短片统一按高清标准处理，编码前会做一次画质复检。用户投稿内容若画质不足，我们会给出改进建议而不是直接退回。</p>
+        </details>
+        <details>
+          <summary>专题企划怎么参与？可以自己提案吗？</summary>
+          <p>可以。每期专题开放期间，创作者可通过投稿入口提交选题与样片，编辑部会在两周内给出反馈。通过后即可参与共创，并获得流量与制作支持。</p>
+        </details>
+        <details>
+          <summary>如何参与「笑声收集计划」的年度合辑？</summary>
+          <p>在征集期内提交符合主题的短片，并在描述中标注活动名称即可。入选作品将出现在年度合辑专题中，作者可获得官方认证标识与周边礼盒。</p>
+        </details>
+        <details>
+          <summary>收藏和点赞会同步到不同设备吗？</summary>
+          <p>登录同一账号后，收藏与点赞记录会在设备间同步。目前以浏览器端与移动端为主，后续会持续优化同步速度。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / 联系 -->
+  <section class="tkz-section" id="tkz-contact">
+    <div class="tkz-wrap">
+      <div class="tkz-cta">
+        <div>
+          <h2>让你的笑声，成为别人今天的好心情</h2>
+          <p>无论你只是想分享一段日常，还是认真准备了一支短片，挠脚心都欢迎你。官方网站长期开放投稿入口，也欢迎品牌与机构洽谈内容合作。</p>
+        </div>
+        <div class="tkz-cta-actions">
+          <button class="tkz-btn tkz-btn-primary" data-tkz-open="submit">提交投稿 / 报名</button>
+          <button class="tkz-btn tkz-btn-ghost" data-tkz-open="contact">联系我们</button>
+          <span class="tkz-contact-line">合作邮箱：partners@naojiaoxin.example</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="tkz-footer">
+  <div class="tkz-wrap">
+    <div class="tkz-footer-grid">
+      <div>
+        <div class="tkz-footer-logo"><span class="tkz-logo-mark">脚</span>挠脚心</div>
+        <p>挠脚心官方网站，专注趣味互动与解压影像的原创视频品牌。我们以匠心打磨每一支短片，用真实、温暖的内容陪伴用户，持续构建多元包容的内容生态。</p>
+        <ul>
+          <li>企业名称：挠脚心内容科技（示例）有限公司</li>
+          <li>内容合作：partners@naojiaoxin.example</li>
+          <li>客服时间：周一至周五 10:00–19:00</li>
+        </ul>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#tkz-focus">焦点内容</a></li>
+          <li><a href="#tkz-videos">热门视频</a></li>
+          <li><a href="#tkz-topics">专题企划</a></li>
+          <li><a href="#tkz-wall">影像墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#tkz-about">品牌解析</a></li>
+          <li><a href="#tkz-creators">创作者矩阵</a></li>
+          <li><a href="#tkz-stories">拍摄手记</a></li>
+          <li><a href="#tkz-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与共建</h4>
+        <ul>
+          <li><a href="#tkz-contact">投稿与报名</a></li>
+          <li><a href="#tkz-comments">用户口碑</a></li>
+          <li><a href="#tkz-contact">商务合作</a></li>
+          <li><a href="#tkz-contact">意见反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tkz-footer-bottom">
+      <span>© 2026 挠脚心 官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容均为原创或已获授权 · 正版高清 · 转载请联系授权</span>
+    </div>
+  </div>
+</footer>
+
+<div class="tkz-toast" id="tkzToast" role="status" aria-live="polite"></div>
+
+<div class="tkz-modal" id="tkzModal" role="dialog" aria-modal="true" aria-labelledby="tkzModalTitle">
+  <div class="tkz-modal-box">
+    <button class="tkz-modal-close" id="tkzModalClose" aria-label="关闭弹窗">✕</button>
+    <h3 id="tkzModalTitle">投稿与报名</h3>
+    <p id="tkzModalDesc">请将作品信息、创作说明与联系方式发送至合作邮箱，或直接提交下方表单。我们会在 3 个工作日内回复。</p>
+    <div class="tkz-modal-actions">
+      <button class="tkz-btn tkz-btn-primary" id="tkzCopyMail">复制合作邮箱</button>
+      <button class="tkz-btn tkz-btn-ghost" id="tkzShareBtn">分享给朋友</button>
+    </div>
+    <div class="tkz-share-tip" id="tkzShareTip"></div>
+  </div>
+</div>
+
+<button class="tkz-top" id="tkzTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ============ SVG 视觉生成 ============ */
+  function svgData(str){
+    return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(str);
+  }
+
+  var ART = {
+    hero: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd7b0"/><stop offset="1" stop-color="#ff9a5c"/></linearGradient><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a4a2a" stop-opacity=".85"/><stop offset="1" stop-color="#4a2a14" stop-opacity=".95"/></linearGradient></defs><rect width="800" height="600" fill="url(#a)"/><circle cx="620" cy="120" r="150" fill="#fff" opacity=".18"/><circle cx="120" cy="470" r="110" fill="#fff" opacity=".14"/><rect x="0" y="430" width="800" height="170" fill="url(#b)"/><path d="M80 520 q60 -40 120 0 q60 40 120 0 q60 -40 120 0 q60 40 120 0 q60 -40 120 0" fill="none" stroke="#ffcf9e" stroke-width="8" stroke-linecap="round" opacity=".8"/><g fill="#3a2414"><circle cx="250" cy="300" r="34"/><rect x="222" y="330" width="56" height="90" rx="26"/><circle cx="400" cy="270" r="40"/><rect x="368" y="306" width="64" height="108" rx="30"/><circle cx="558" cy="308" r="32"/><rect x="532" y="336" width="52" height="86" rx="24"/></g><g stroke="#3a2414" stroke-width="12" stroke-linecap="round" fill="none"><path d="M282 356 q40 34 76 2"/><path d="M430 326 q34 30 66 0"/><path d="M560 366 q30 26 58 0"/></g><g fill="#fff" opacity=".95"><circle cx="240" cy="292" r="6"/><circle cx="262" cy="292" r="6"/><circle cx="390" cy="260" r="7"/><circle cx="414" cy="260" r="7"/><circle cx="548" cy="300" r="6"/><circle cx="570" cy="300" r="6"/></g><text x="400" y="120" text-anchor="middle" font-family="sans-serif" font-size="44" font-weight="900" fill="#fff" opacity=".9">HA HA HA</text><text x="400" y="170" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#7a4a2a" letter-spacing="8">LAUGH &amp; RELAX</text></svg>'),
+    focusMain: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"><defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe7c9"/><stop offset="1" stop-color="#ffa76b"/></linearGradient></defs><rect width="800" height="500" fill="url(#a)"/><rect x="0" y="330" width="800" height="170" fill="#f4c79b"/><rect x="0" y="330" width="800" height="16" fill="#fff" opacity=".5"/><g fill="#3a2414"><ellipse cx="250" cy="300" rx="90" ry="26"/><ellipse cx="290" cy="284" rx="54" ry="20" fill="#5a3a22"/><circle cx="196" cy="300" r="15" fill="#ffd7b0"/><circle cx="214" cy="300" r="15" fill="#ffd7b0"/><circle cx="232" cy="300" r="15" fill="#ffd7b0"/><circle cx="250" cy="300" r="15" fill="#ffd7b0"/><ellipse cx="560" cy="300" rx="90" ry="26"/><ellipse cx="520" cy="284" rx="54" ry="20" fill="#5a3a22"/><circle cx="604" cy="300" r="15" fill="#ffd7b0"/><circle cx="586" cy="300" r="15" fill="#ffd7b0"/><circle cx="568" cy="300" r="15" fill="#ffd7b0"/><circle cx="550" cy="300" r="15" fill="#ffd7b0"/></g><g stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".85"><path d="M320 200 l40 -30"/><path d="M360 210 l40 -30"/><path d="M440 200 l-40 -30"/><path d="M400 210 l-40 -30"/></g><text x="400" y="200" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="900" fill="#5a3a22">FUN TIME</text><rect x="0" y="400" width="800" height="100" fill="#7a4a2a" opacity=".15"/></svg>'),
+    focus1: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200"><rect width="320" height="200" fill="#fff0d6"/><rect x="0" y="130" width="320" height="70" fill="#ffd9a8"/><circle cx="90" cy="90" r="34" fill="#ffb27a"/><circle cx="160" cy="80" r="30" fill="#ffcfa0"/><circle cx="230" cy="95" r="26" fill="#ffb27a"/><g stroke="#7a4a2a" stroke-width="5" fill="none" stroke-linecap="round"><path d="M130 140 q30 -26 62 0"/><path d="M200 148 q24 -20 48 0"/></g><circle cx="80" cy="82" r="4" fill="#7a4a2a"/><circle cx="98" cy="82" r="4" fill="#7a4a2a"/><text x="260" y="42" font-family="sans-serif" font-size="15" font-weight="800" fill="#c96a2a">玩耍</text></svg>'),
+    focus2: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200"><rect width="320" height="200" fill="#e8f4ee"/><rect x="30" y="120" width="260" height="60" rx="8" fill="#cbe3d6"/><rect x="0" y="176" width="320" height="24" fill="#8fbfa6"/><circle cx="90" cy="86" r="26" fill="#3aa17e"/><rect x="150" y="60" width="44" height="60" rx="6" fill="#ffb703"/><rect x="210" y="72" width="52" height="48" rx="6" fill="#ff7a45"/><path d="M120 150 l30 -40 l30 40 z" fill="#5c8f76"/><text x="150" y="34" font-family="sans-serif" font-size="15" font-weight="800" fill="#2f7355">道具台</text></svg>'),
+    focus3: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200"><rect width="320" height="200" fill="#f6e6d8"/><rect x="0" y="150" width="320" height="50" fill="#d99a68"/><circle cx="250" cy="56" r="26" fill="#ffcf6b"/><g fill="#7a4a2a"><rect x="40" y="112" width="44" height="40" rx="8"/><rect x="100" y="120" width="44" height="32" rx="8"/><rect x="160" y="112" width="44" height="40" rx="8"/></g><g stroke="#7a4a2a" stroke-width="4" fill="none"><path d="M40 170 q40 -20 80 0"/><path d="M160 170 q40 -20 80 0"/></g><text x="30" y="46" font-family="sans-serif" font-size="15" font-weight="800" fill="#9a5b2c">邻里</text></svg>'),
+    v1: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270"><rect width="480" height="270" fill="#ffe4cf"/><rect x="0" y="190" width="480" height="80" fill="#f2c19a"/><g fill="#7a4a2a"><ellipse cx="150" cy="176" rx="60" ry="22"/><ellipse cx="330" cy="176" rx="60" ry="22"/><circle cx="250" cy="120" r="44"/></g><g fill="#ffd7b0"><circle cx="120" cy="176" r="11"/><circle cx="136" cy="176" r="11"/><circle cx="152" cy="176" r="11"/><circle cx="168" cy="176" r="11"/><circle cx="300" cy="176" r="11"/><circle cx="316" cy="176" r="11"/><circle cx="332" cy="176" r="11"/><circle cx="348" cy="176" r="11"/></g><g fill="#7a4a2a"><circle cx="234" cy="112" r="7"/><circle cx="266" cy="112" r="7"/></g><path d="M232 138 q18 18 36 0" stroke="#7a4a2a" stroke-width="7" fill="none" stroke-linecap="round"/><text x="240" y="58" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="900" fill="#c96a2a">HA!</text></svg>'),
+    v2: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270"><rect width="480" height="270" fill="#f1f8f4"/><rect x="0" y="200" width="480" height="70" fill="#cfe8db"/><rect x="70" y="120" width="140" height="80" rx="10" fill="#8fbfa6"/><rect x="250" y="100" width="150" height="100" rx="10" fill="#fff" stroke="#8fbfa6" stroke-width="4"/><g fill="#3aa17e"><rect x="270" y="120" width="50" height="10" rx="5"/><rect x="270" y="142" width="90" height="10" rx="5"/><rect x="270" y="164" width="70" height="10" rx="5"/></g><circle cx="120" cy="90" r="26" fill="#ffb703"/><text x="330" y="70" font-family="sans-serif" font-size="20" font-weight="800" fill="#2f7355">100元</text></svg>'),
+    v3: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270"><defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd8a6"/><stop offset="1" stop-color="#ff9d63"/></linearGradient></defs><rect width="480" height="270" fill="url(#s)"/><rect x="0" y="200" width="480" height="70" fill="#c96a2a" opacity=".5"/><circle cx="380" cy="70" r="34" fill="#fff8e6" opacity=".9"/><g fill="#5a3a22"><circle cx="140" cy="140" r="24"/><circle cx="240" cy="122" r="24"/><circle cx="340" cy="140" r="24"/><rect x="122" y="162" width="36" height="54" rx="16"/><rect x="222" y="144" width="36" height="72" rx="16"/><rect x="322" y="162" width="36" height="54" rx="16"/></g><path d="M140 210 q100 40 200 0" stroke="#5a3a22" stroke-width="8" fill="none" stroke-linecap="round"/><text x="240" y="46" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="900" fill="#7a4a2a">GOODBYE 2026</text></svg>'),
+    v4: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270"><rect width="480" height="270" fill="#f8eef8"/><rect x="0" y="210" width="480" height="60" fill="#e3c9e3"/><rect x="90" y="100" width="130" height="110" rx="10" fill="#c76bd6"/><rect x="250" y="90" width="130" height="120" rx="10" fill="#f0a9f7"/><g stroke="#8a3f96" stroke-width="4" fill="none"><path d="M110 130 h90"/><path d="M110 150 h90"/><path d="M110 170 h90"/></g><g fill="#8a3f96"><circle cx="150" cy="80" r="10"/><circle cx="200" cy="80" r="10"/><circle cx="300" cy="72" r="10"/><circle cx="350" cy="72" r="10"/></g><text x="240" y="42" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="800" fill="#8a3f96">DIY 手作</text></svg>'),
+    v5: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270"><rect width="480" height="270" fill="#fff6e3"/><rect x="0" y="200" width="480" height="70" fill="#ffdca8"/><ellipse cx="200" cy="180" rx="90" ry="34" fill="#ffa03a"/><circle cx="250" cy="120" r="46" fill="#ffb85c"/><path d="M210 84 l-20 -30 l34 12 z" fill="#ffa03a"/><path d="M290 84 l20 -30 l-34 12 z" fill="#ffa03a"/><g fill="#5a3a22"><ellipse cx="232" cy="116" rx="6" ry="8"/><ellipse cx="268" cy="116" rx="6" ry="8"/><path d="M246 134 q8 8 16 0" stroke="#5a3a22" stroke-width="4" fill="none" stroke-linecap="round"/></g><path d="M300 180 q40 -10 60 -40" stroke="#ffa03a" stroke-width="10" fill="none" stroke-linecap="round"/><text x="120" y="52" font-family="sans-serif" font-size="20" font-weight="800" fill="#c96a2a">喵～</text></svg>'),
+    v6: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270"><defs><linearGradient id="n" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#20283c"/><stop offset="1" stop-color="#3b4a66"/></linearGradient></defs><rect width="480" height="270" fill="url(#n)"/><circle cx="380" cy="60" r="30" fill="#ffe9b0"/><g fill="#ffe9b0" opacity=".85"><circle cx="80" cy="60" r="3"/><circle cx="140" cy="40" r="2"/><circle cx="200" cy="72" r="3"/><circle cx="300" cy="36" r="2"/></g><rect x="120" y="160" width="240" height="80" rx="10" fill="#e8cba0"/><rect x="140" y="140" width="120" height="20" rx="4" fill="#f3e0c2"/><circle cx="200" cy="120" r="18" fill="#ffcf6b"/><path d="M140 190 h200" stroke="#b58c5c" stroke-width="4"/><text x="240" y="232" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="700" fill="#7a5a38">深夜清单</text></svg>'),
+    t1: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><rect width="300" height="300" fill="#ffe2c4"/><circle cx="80" cy="80" r="30" fill="#ffb703"/><rect x="40" y="200" width="220" height="70" rx="18" fill="#ff9a5c"/><g fill="#fff"><circle cx="100" cy="236" r="16"/><circle cx="150" cy="236" r="16"/><circle cx="200" cy="236" r="16"/></g><text x="150" y="150" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="900" fill="#c96a2a">解压</text></svg>'),
+    t2: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><rect width="300" height="300" fill="#2c3550"/><path d="M40 240 l110 -140 l110 140 z" fill="#4b5f8a"/><circle cx="210" cy="80" r="20" fill="#ffe9b0"/><g fill="#ffcf6b"><circle cx="100" cy="150" r="5"/><circle cx="150" cy="120" r="5"/><circle cx="200" cy="160" r="5"/><circle cx="130" cy="200" r="5"/></g><text x="150" y="282" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="800" fill="#ffe9b0">笑声收集</text></svg>'),
+    t3: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><rect width="300" height="300" fill="#efe6dc"/><rect x="50" y="70" width="200" height="140" rx="10" fill="#3a2a1e"/><rect x="66" y="86" width="168" height="108" rx="6" fill="#8fbfa6"/><circle cx="110" cy="140" r="20" fill="#fff"/><path d="M100 140 l16 -12 v24 z" fill="#3a2a1e"/><rect x="150" y="110" width="60" height="8" rx="4" fill="#fff" opacity=".7"/><rect x="150" y="128" width="46" height="8" rx="4" fill="#fff" opacity=".5"/><text x="150" y="258" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="800" fill="#5a3a22">幕后</text></svg>'),
+    t4: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><rect width="300" height="300" fill="#dfeef7"/><rect x="0" y="220" width="300" height="80" fill="#9dc4dc"/><g fill="#3a5a72"><circle cx="90" cy="150" r="20"/><circle cx="150" cy="130" r="20"/><circle cx="210" cy="150" r="20"/><rect x="76" y="170" width="28" height="50" rx="12"/><rect x="136" y="150" width="28" height="70" rx="12"/><rect x="196" y="170" width="28" height="50" rx="12"/></g><path d="M90 210 q60 30 120 0" stroke="#3a5a72" stroke-width="7" fill="none" stroke-linecap="round"/><text x="150" y="60" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="900" fill="#2f5a78">社区游戏</text></svg>'),
+    w1: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><rect width="400" height="400" fill="#ffe4cf"/><rect x="0" y="260" width="400" height="140" fill="#f2c19a"/><ellipse cx="200" cy="250" rx="90" ry="30" fill="#7a4a2a"/><g fill="#ffd7b0"><circle cx="150" cy="250" r="13"/><circle cx="172" cy="250" r="13"/><circle cx="194" cy="250" r="13"/><circle cx="216" cy="250" r="13"/></g><circle cx="200" cy="160" r="52" fill="#ffb27a"/><g fill="#7a4a2a"><circle cx="184" cy="150" r="7"/><circle cx="216" cy="150" r="7"/></g><path d="M180 180 q20 20 40 0" stroke="#7a4a2a" stroke-width="7" fill="none" stroke-linecap="round"/><text x="200" y="80" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="900" fill="#c96a2a">哈哈</text></svg>'),
+    w2: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="#fff4e4"/><rect x="30" y="40" width="110" height="70" rx="8" fill="#ffcf6b"/><rect x="160" y="40" width="110" height="70" rx="8" fill="#ff9a9a"/><rect x="30" y="130" width="110" height="50" rx="8" fill="#a8d8c0"/><rect x="160" y="130" width="110" height="50" rx="8" fill="#b8c8f0"/><g stroke="#7a4a2a" stroke-width="3" fill="none"><path d="M46 62 h60"/><path d="M46 78 h42"/><path d="M176 62 h60"/><path d="M176 78 h42"/></g><text x="150" y="26" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="800" fill="#9a5b2c">规则卡</text></svg>'),
+    w3: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200"><defs><linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd9a8"/><stop offset="1" stop-color="#ff9d63"/></linearGradient></defs><rect width="400" height="200" fill="url(#w)"/><rect x="0" y="150" width="400" height="50" fill="#c96a2a" opacity=".45"/><circle cx="320" cy="52" r="24" fill="#fff8e6" opacity=".9"/><g fill="#5a3a22"><circle cx="110" cy="112" r="18"/><circle cx="200" cy="100" r="18"/><circle cx="290" cy="112" r="18"/><rect x="98" y="128" width="24" height="38" rx="11"/><rect x="188" y="116" width="24" height="50" rx="11"/><rect x="278" y="128" width="24" height="38" rx="11"/></g><path d="M110 160 q90 26 180 0" stroke="#5a3a22" stroke-width="6" fill="none" stroke-linecap="round"/></svg>'),
+    w4: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="#f8eef8"/><g fill="#c76bd6"><circle cx="70" cy="80" r="26"/><circle cx="130" cy="80" r="26"/><circle cx="190" cy="80" r="26"/><circle cx="250" cy="80" r="26"/></g><g fill="#f0a9f7"><circle cx="100" cy="140" r="20"/><circle cx="160" cy="140" r="20"/><circle cx="220" cy="140" r="20"/></g><path d="M40 180 q110 20 220 0" stroke="#8a3f96" stroke-width="4" fill="none"/></svg>'),
+    w5: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="#fff6e3"/><rect x="0" y="150" width="300" height="50" fill="#ffdca8"/><ellipse cx="140" cy="150" rx="70" ry="26" fill="#ffa03a"/><circle cx="170" cy="100" r="36" fill="#ffb85c"/><path d="M140 70 l-16 -24 l28 10 z" fill="#ffa03a"/><path d="M200 70 l16 -24 l-28 10 z" fill="#ffa03a"/><g fill="#5a3a22"><ellipse cx="158" cy="96" rx="5" ry="6"/><ellipse cx="182" cy="96" rx="5" ry="6"/></g><path d="M210 150 q30 -8 46 -32" stroke="#ffa03a" stroke-width="8" fill="none" stroke-linecap="round"/></svg>'),
+    w6: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200"><rect width="400" height="200" fill="#efe6dc"/><rect x="60" y="50" width="280" height="110" rx="10" fill="#3a2a1e"/><rect x="76" y="66" width="248" height="78" rx="6" fill="#8fbfa6"/><circle cx="150" cy="105" r="18" fill="#fff"/><path d="M142 105 l14 -11 v22 z" fill="#3a2a1e"/><rect x="200" y="80" width="90" height="8" rx="4" fill="#fff" opacity=".7"/><rect x="200" y="100" width="70" height="8" rx="4" fill="#fff" opacity=".5"/><rect x="200" y="120" width="80" height="8" rx="4" fill="#fff" opacity=".4"/><text x="200" y="186" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="800" fill="#5a3a22">TAKE 01</text></svg>'),
+    w7: svgData('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><defs><linearGradient id="d" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#232b42"/><stop offset="1" stop-color="#3b4a66"/></linearGradient></defs><rect width="300" height="200" fill="url(#d)"/><path d="M60 150 l90 -90 l90 90 z" fill="#4b5f8a"/><path d="M90 150 l60 -60 l60 60 z" fill="#5f76a0"/><g fill="#ffcf6b"><circle cx="80" cy="60" r="4"/><circle cx="150" cy="46" r="4"/><circle cx="220" cy="60" r="4"/><circle cx="120" cy="80" r="3"/><circle cx="180" cy="80" r="3"/></g><text x="150" y="184" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#ffe9b0">NIGHT TALK</text></svg>')
+  };
+
+  function setArt(el, key){
+    if(el && ART[key]) el.src = ART[key];
+  }
+  setArt(document.getElementById('tkzHeroImg'), 'hero');
+  var focusMain = document.querySelector('img[data-tkz-art="focusMain"]');
+  setArt(focusMain, 'focusMain');
+  document.querySelectorAll('img[data-tkz-art]').forEach(function(img){
+    var k = img.getAttribute('data-tkz-art');
+    if(k === 'focusMain') return;
+    setArt(img, k);
+  });
+
+  /* ============ Toast ============ */
+  var toastEl = document.getElementById('tkzToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-show'); }, 2200);
+  }
+
+  /* ============ 移动端导航 ============ */
+  var burger = document.getElementById('tkzBurger');
+  var nav = document.getElementById('tkzNav');
+  var searchBox = document.getElementById('tkzSearchForm');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    if(open) searchBox.classList.add('is-open');
+    else searchBox.classList.remove('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.textContent = open ? '✕' : '☰';
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      if(window.innerWidth <= 960){
+        nav.classList.remove('is-open');
+        searchBox.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+        burger.textContent = '☰';
+      }
+    });
+  });
+
+  /* ============ 搜索反馈 ============ */
+  var searchForm = document.getElementById('tkzSearchForm');
+  var searchInput = document.getElementById('tkzSearchInput');
+  var searchFeedback = document.getElementById('tkzSearchFeedback');
+  var searchIndex = [];
+  document.querySelectorAll('.tkz-video-card h3, .tkz-topic h3, .tkz-creator h3').forEach(function(el){
+    searchIndex.push({text: el.textContent.trim(), target: el.closest('article') || el});
+  });
+
+  searchForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = searchInput.value.trim();
+    searchFeedback.classList.add('is-show');
+    if(!q){
+      searchFeedback.textContent = '请输入关键词，例如「解压」「手作」「校园」。';
+      return;
+    }
+    var hits = searchIndex.filter(function(item){
+      return item.text.indexOf(q) > -1;
+    });
+    if(hits.length > 0){
+      searchFeedback.textContent = '找到 ' + hits.length + ' 个相关内容：「' + q + '」，已为你定位到第一条。';
+      hits[0].target.scrollIntoView({behavior:'smooth', block:'center'});
+      hits[0].target.style.outline = '2px solid #ff6b35';
+      setTimeout(function(){ hits[0].target.style.outline = ''; }, 1800);
+    }else{
+      searchFeedback.textContent = '暂未找到与「' + q + '」直接匹配的内容，试试「解压」「邻里」「手作」等关键词，或浏览热门视频流。';
+    }
+  });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value.trim()) searchFeedback.classList.remove('is-show');
+  });
+
+  /* ============ 点赞 / 收藏 ============ */
+  document.querySelectorAll('.tkz-video-card').forEach(function(card){
+    var likeBtn = card.querySelector('[data-tkz-like]');
+    var saveBtn = card.querySelector('[data-tkz-save]');
+    if(likeBtn){
+      var numEl = likeBtn.querySelector('b');
+      var base = parseFloat(numEl.textContent.replace(/[^\d.]/g,'')) || 0;
+      var unit = /万/.test(numEl.textContent) ? '万' : '';
+      var liked = false;
+      likeBtn.addEventListener('click', function(){
+        liked = !liked;
+        likeBtn.setAttribute('aria-pressed', liked ? 'true' : 'false');
+        likeBtn.classList.toggle('is-liked', liked);
+        if(liked){
+          base = unit ? +(base + 0.1).toFixed(1) : base + 1;
+        }else{
+          base = unit ? +(base - 0.1).toFixed(1) : base - 1;
+        }
+        numEl.textContent = (unit ? base + '万' : base);
+        toast(liked ? '已点赞，感谢你的喜欢' : '已取消点赞');
+      });
+    }
+    if(saveBtn){
+      var saved = false;
+      saveBtn.addEventListener('click', function(){
+        saved = !saved;
+        saveBtn.setAttribute('aria-pressed', saved ? 'true' : 'false');
+        saveBtn.classList.toggle('is-saved', saved);
+        var b = saveBtn.querySelector('b');
+        b.textContent = saved ? '已收藏' : '收藏';
+        saveBtn.querySelector('span').textContent = saved ? '★' : '☆';
+        toast(saved ? '已加入收藏夹' : '已从收藏夹移除');
+      });
+    }
+  });
+
+  /* ============ 弹窗 ============ */
+  var modal = document.getElementById('tkzModal');
+  var modalTitle = document.getElementById('tkzModalTitle');
+  var modalDesc = document.getElementById('tkzModalDesc');
+  var modalClose = document.getElementById('tkzModalClose');
+  var shareTip = document.getElementById('tkzShareTip');
+  var lastFocus = null;
+
+  function openModal(title, desc){
+    modalTitle.textContent = title;
+    modalDesc.textContent = desc;
+    shareTip.classList.remove('is-show');
+    lastFocus = document.activeElement;
+    modal.classList.add('is-open');
+    modalClose.focus();
+  }
+  function closeModal(){
+    modal.classList.remove('is-open');
+    if(lastFocus) lastFocus.focus();
+  }
+  document.querySelectorAll('[data-tkz-open]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var type = btn.getAttribute('data-tkz-open');
+      if(type === 'submit'){
+        openModal('投稿与报名', '请准备作品文件、创作说明与联系方式，我们将于 3 个工作日内回复。也可以通过合作邮箱提交，标题注明「投稿 + 作品名」。');
+      }else{
+        openModal('联系我们', '内容合作、品牌洽谈与媒体联络请发送邮件至 partners@naojiaoxin.example，工作日 10:00–19:00 会有专人回复。');
+      }
+    });
+  });
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){
+    if(e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+  });
+
+  /* ============ 复制邮箱 ============ */
+  document.getElementById('tkzCopyMail').addEventListener('click', function(){
+    var mail = 'partners@naojiaoxin.example';
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(mail).then(function(){
+        toast('合作邮箱已复制到剪贴板');
+      }).catch(function(){
+        toast('邮箱：' + mail);
+      });
+    }else{
+      toast('邮箱：' + mail);
+    }
+  });
+
+  /* ============ 分享 ============ */
+  document.getElementById('tkzShareBtn').addEventListener('click', function(){
+    shareTip.textContent = '可分享至微信、微博或 QQ：复制页面地址后发送给好友，或在移动端使用系统分享功能。';
+    shareTip.classList.add('is-show');
+  });
+
+  /* ============ 回到顶部 ============ */
+  var topBtn = document.getElementById('tkzTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 500) topBtn.classList.add('is-show');
+    else topBtn.classList.remove('is-show');
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ============ 锚点滚动偏移（吸顶高度补偿） ============ */
+  var sticky = document.querySelector('.tkz-sticky');
+  function offsetAnchor(){
+    if(!sticky) return;
+    var h = sticky.offsetHeight + 10;
+    document.querySelectorAll('main section[id], footer[id]').forEach(function(sec){});
+    document.documentElement.style.setProperty('--tkz-sticky-h', h + 'px');
+  }
+  offsetAnchor();
+  window.addEventListener('resize', offsetAnchor);
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(e){
+      var id = link.getAttribute('href');
+      if(id.length < 2) return;
+      var target = document.querySelector(id);
+      if(!target) return;
+      e.preventDefault();
+      var h = sticky ? sticky.offsetHeight + 12 : 0;
+      var top = target.getBoundingClientRect().top + window.scrollY - h;
+      window.scrollTo({top: top, behavior:'smooth'});
+      history.replaceState(null, '', id);
+    });
+  });
+
+})();
+</script>
+</body>
+            </html>
